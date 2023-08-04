@@ -1,1 +1,1 @@
-# odin_calculator
+Hi, welcome to my last project in the Odin Project foundations course! This project will showcase all the skills I've learned in this course, including HTML, CSS, JavaScript, as well as DOM Manipulation, Events and OOP. I'm excited to share my progress with you and demonstrate what I've accomplished during this course. Thank you for following my journey!
