@@ -11,7 +11,9 @@ const multiply = function (arg1, arg2) {
 };
 
 const divide = function (arg1, arg2) {
-  if (arg2 === 0) {
+  if (arg1 == 0 && arg2 == 0) {
+    return 0;
+  } else if (arg2 === 0) {
     return "Error";
   }
   return arg1 / arg2;
