@@ -2,48 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <title>Calculator</title>
 </head>
 
 <body>
-    <div id="container">
-        <div id='calcBody'>
-            <div id="calcDisplay">
-                <!-- Calculator display content will go here -->
-            </div>
-            <div id="calcButtonsContainer">
-                <div id="calcButtons2">
-                    <button>Clear</button>
-                    <button>Delete</button>
-                </div>
-                <div id="calcButtons">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>÷</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>x</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>-</button>
-                    <button>.</button>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>+</button>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="calcBody">
+      <div class="calcDisplay">
+        <div class="display-last" id="lastDisplayScreen"></div>
+        <div class="display-current" id="currentDisplayScreen">0</div>
+      </div>
+      <div class="calcButtonsOther">
+        <button class="red" id="clearBtn" onclick="this.blur();">
+          Clear
+        </button>
+        <button class="blue" id="deleteBtn" onclick="this.blur();">
+          Delete
+        </button>
+      </div>
+      <div class="calcButtonsMain">
+        <button class="btn" onclick="this.blur();" data-number>7</button>
+        <button class="btn" onclick="this.blur();" data-number>8</button>
+        <button class="btn" onclick="this.blur();" data-number>9</button>
+        <button class="btn" onclick="this.blur();" data-operator>÷</button>
+
+        <button class="btn" onclick="this.blur();" data-number>4</button>
+        <button class="btn" onclick="this.blur();" data-number>5</button>
+        <button class="btn" onclick="this.blur();" data-number>6</button>
+        <button class="btn" onclick="this.blur();" data-operator>×</button>
+
+        <button class="btn" onclick="this.blur();" data-number>1</button>
+        <button class="btn" onclick="this.blur();" data-number>2</button>
+        <button class="btn" onclick="this.blur();" data-number>3</button>
+        <button class="btn" onclick="this.blur();" data-operator>−</button>
+
+        <button class="btn" onclick="this.blur();" id="decBtn">.</button>
+        <button class="btn" onclick="this.blur();" data-number>0</button>
+        <button class="btn" onclick="this.blur();" id="equalsBtn">=</button>
+        <button class="btn" onclick="this.blur();" data-operator>+</button>
+      </div>
     </div>
-    <div id="footer">
-        Copyright © Kabir Virk 2023
-    </div>
+  </div>
+  <div id="footer">
+    Copyright © Kabir Virk 2023
+  </div>
 </body>
 
 </html>
